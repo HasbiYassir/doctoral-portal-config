@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update # Crée/met à jour le schéma au démarrage
+    show-sql: true
+jwt:
+  secret: maCleSecreteSuperLongueEtComplexePourJWT123456789!@#
+  expiration: 86400000 # 24 heures en ms
